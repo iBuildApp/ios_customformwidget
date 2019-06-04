@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IBACoreUI
 import FlexLayout
 import PinLayout
 
