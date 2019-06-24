@@ -18,11 +18,15 @@ class CustomFormViewController: BaseViewController {
     /// Widger config data
     private var data: DataModel?
     
+    private var colorScheme: ColorSchemeModel?
+    
     // MARK: - Controller life cycle methods
-    convenience init(type: String?, data: DataModel?) {
+    public convenience init(type: String?, data: DataModel?) {
+        let colorScheme = data?.colorScheme ?? AppManager.manager.appModel()?.design?.colorScheme
         self.init()
         self.type = type
         self.data = data
+        self.colorScheme = colorScheme
         
         automaticallyAdjustsScrollViewInsets = false
     }
@@ -32,7 +36,7 @@ class CustomFormViewController: BaseViewController {
     }
     
     override func loadView() {
-        if let form = data?.form, let colorScheme = data?.colorScheme {
+        if let form = data?.form, let colorScheme = self.colorScheme {
             self.view = CustomFormView(form: form, colorScheme: colorScheme)
         }
     }

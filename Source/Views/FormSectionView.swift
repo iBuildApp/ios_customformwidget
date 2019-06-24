@@ -27,7 +27,7 @@ public class FormSectionView: UIView {
         super.init(frame: .zero)
         
         title.text = section.title
-        title.textColor = colorScheme.color5.getColor() ?? .black
+        title.textColor = colorScheme.accentColor
         title.font = .systemFont(ofSize: 19.0)
         
         rootFlexContainer.flex.direction(.column).define { (flex) in

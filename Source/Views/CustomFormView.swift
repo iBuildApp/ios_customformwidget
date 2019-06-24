@@ -31,7 +31,7 @@ public class CustomFormView: UIView {
         backgroundColor = colorScheme.backgroundColor
         
         sendButton.setTitle(form.email?.button?.label ?? "SEND", for: .normal)
-        sendButton.backgroundColor = colorScheme.color5.getColor() ?? .darkGray
+        sendButton.backgroundColor = colorScheme.accentColor
         sendButton.setTitleColor(colorScheme.backgroundColor, for: .normal)
         sendButton.titleLabel?.font = .systemFont(ofSize: 22.0)
 

@@ -27,7 +27,7 @@ class DatePickerFieldView: BaseFieldView {
         }
         
         title.text = field.label
-        title.textColor = colorScheme.color3.getColor() ?? .black
+        title.textColor = colorScheme.secondaryColor
         
         textFiled.text = field.value
         textFiled.placeholder = "MM/DD/YYYY"

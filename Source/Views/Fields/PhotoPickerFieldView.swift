@@ -27,10 +27,10 @@ class PhotoPickerFieldView: BaseFieldView {
     
     override func setup() {
         title.text = field.label
-        title.textColor = colorScheme.color3.getColor() ?? .black
+        title.textColor = colorScheme.secondaryColor
         
         button.setTitle(field.value, for: .normal)
-        button.backgroundColor = colorScheme.color5.getColor() ?? .darkGray
+        button.backgroundColor = colorScheme.accentColor
         button.setTitleColor(colorScheme.backgroundColor, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 18.0)
         

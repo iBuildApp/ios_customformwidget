@@ -20,7 +20,7 @@ class PickerFieldView: BaseFieldView, UIPickerViewDelegate, UIPickerViewDataSour
         pickerView.delegate = self
         
         title.text = field.label
-        title.textColor = colorScheme.color3.getColor() ?? .black
+        title.textColor = colorScheme.secondaryColor
         
         textFiled.text = field.values?.first
         textFiled.layer.borderColor = UIColor.black.cgColor

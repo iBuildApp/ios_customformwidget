@@ -25,7 +25,7 @@ class CheckboxFieldView: BaseFieldView {
         checkbox.isChecked = field.value == "checked"
         
         label.text = field.label
-        label.textColor = colorScheme.color3.getColor() ?? .black
+        label.textColor = colorScheme.secondaryColor
         
         flex.direction(.row).define { (flex) in
             flex.addItem(checkbox).height(30).aspectRatio(1)

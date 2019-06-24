@@ -16,7 +16,7 @@ class TextFieldView: BaseFieldView {
     
     override func setup() {
         title.text = field.label
-        title.textColor = colorScheme.color3.getColor() ?? .black
+        title.textColor = colorScheme.secondaryColor
         
         textFiled.placeholder = field.value
         textFiled.keyboardType = field.format == .number ? UIKeyboardType.decimalPad : UIKeyboardType.default

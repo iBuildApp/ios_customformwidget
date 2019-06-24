@@ -21,7 +21,7 @@ class RadioGroupFieldView: BaseFieldView {
         let selectedIdx = groupField.fields.firstIndex { $0.value == "checked" }
         radioGroup = RadioGroup(titles: titles)
         radioGroup.selectedIndex = selectedIdx ?? 0
-        radioGroup.titleColor = colorScheme.color3.getColor() ?? .black
+        radioGroup.titleColor = colorScheme.secondaryColor
         radioGroup.buttonSize = 30
         radioGroup.itemSpacing = 10
 

@@ -19,7 +19,7 @@ class TextAreaFieldView: BaseFieldView {
     
     override func setup() {
         title.text = field.label
-        title.textColor = colorScheme.color3.getColor() ?? .black
+        title.textColor = colorScheme.secondaryColor
         
         textView.placeholder = field.value ?? ""
         textView.delegate = self
