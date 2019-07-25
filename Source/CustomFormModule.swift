@@ -17,7 +17,7 @@ public class CustomFormModule: BaseModule, ModuleType {
     internal var data: DataModel?
     
     public override class func canHandle(config: WidgetModel) -> Bool {
-        return config.type == "customform" ? true : false
+        return config.type == "customform"
     }
     
     public required init() {
