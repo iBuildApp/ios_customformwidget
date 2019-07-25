@@ -23,7 +23,7 @@ public class CustomFormModuleRouter: BaseRouter<CustomFormModuleRoute> {
     }
     
     public override func prepareTransition(for route: CustomFormModuleRoute) -> RouteTransition {
-        return RouteTransition(module: generateRootViewController(), isAnimated: true, showNavigationBar: true, showTabBar: false)
+        return RouteTransition(module: generateRootViewController(), isAnimated: true)
     }
     
     public override func rootTransition() -> RouteTransition {
